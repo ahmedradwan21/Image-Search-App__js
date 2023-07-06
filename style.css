@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    line-height: 1.6;
+    background-color: black;
+}
+.logo
+{
+    color:rgb(12, 12, 12);
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    width: 20%;
+    border-radius: 10px;
+    align-items: center;
+    display: block;
+    left: 40%;
+    background-color: red;
+}
+h1
+{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    color: red;
+    position: relative;
+    right: 4px;
+    top: 40px;
+}
+
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-bottom: 60px;
+}
+#search-input
+{
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0  6px rgba(0,0,0,0.2);
+    font-size: 18px;
+    color: #fff;
+    max-width: 400px ;
+    padding: 10px 20px;
+    background-color: #1c2426;
+}
+#search-button
+{
+    padding: 8px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 0 0 0px rgba(0,0,0,0.2);
+}
+.search-result
+{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.search-result
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(0,0,0,0.2);
+    display: revert;
+}
+.search-result img
+{
+    height: 100%;
+    object-fit: cover;
+    transition : opacity 0.2s ease-in-out; 
+}
+
+.search-result a
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 20%;
+}
+#show-more-button
+{
+    background-color: #008cba;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px auto;
+    display: block;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .search-result{
+        padding: 20px;
+    }
+    .search-result
+    {
+        width: 45%;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .search-result{
+        width: 100%;
+    }
+}
